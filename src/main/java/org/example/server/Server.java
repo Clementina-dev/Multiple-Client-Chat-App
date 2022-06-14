@@ -1,4 +1,6 @@
-package org.example.models;
+package org.example.server;
+
+import org.example.client.ClientHandler;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -13,16 +15,16 @@ public class Server {
 
     public void startServer() {
        try {
-           while (serverSocket.isClosed()) {
+           while (!serverSocket.isClosed()) {
                Socket socket = serverSocket.accept();
-               System.out.println("New Client Connected! 👩‍💼👨‍💼");
+               System.out.println("New Client Connected! 👩‍👨");
 
                ClientHandler clientHandler = new ClientHandler(socket);
                Thread thread = new Thread(clientHandler);
                thread.start();
            }
        } catch (IOException e) {
-
+           closeServerSocket();
        }
     }
 
@@ -36,4 +38,9 @@ public class Server {
         }
     }
 
+    public static void main(String[] args) throws IOException {
+        ServerSocket serversocket = new ServerSocket(1234);
+        Server server = new Server(serversocket);
+        server.startServer();
+    }
 }
