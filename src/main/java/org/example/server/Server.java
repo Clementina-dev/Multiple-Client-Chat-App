@@ -1,6 +1,6 @@
 package org.example.server;
 
-import org.example.client.ClientHandler;
+import org.example.client.ClientRunner;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -19,8 +19,8 @@ public class Server {
                Socket socket = serverSocket.accept();
                System.out.println("New Client Connected! 👩‍👨");
 
-               ClientHandler clientHandler = new ClientHandler(socket);
-               Thread thread = new Thread(clientHandler);
+               ClientRunner clientRunner = new ClientRunner(socket);
+               Thread thread = new Thread(clientRunner);
                thread.start();
            }
        } catch (IOException e) {
