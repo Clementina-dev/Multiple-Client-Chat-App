@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f56003af-63c0-453d-abe7-a01ec7a99df0" name="Changes" comment="Committing with some modifications">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/ClientRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/Clients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655220932428</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Committing with some modifications">
+      <created>1655279818303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655279818303</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

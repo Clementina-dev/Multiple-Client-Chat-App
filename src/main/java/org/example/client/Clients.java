@@ -74,8 +74,9 @@ public class Clients {
 
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome User");
-        System.out.print("Please input your Username or Nickname for the group chat: ");
+        System.out.println("Welcome To Clemmy's Chat App");
+        System.out.println("Chat and Connect with friends all over the world 😉!");
+        System.out.print("Please enter your name to begin the chat: ");
         String clientUserName = scanner.nextLine();
         Socket socket = new Socket("localhost", 1234);
         Clients clients = new Clients(socket, clientUserName);
