@@ -46,7 +46,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Clementina/week-five-task-java011-Clementina-dev&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.org.example.client.Clients">
+  <component name="RunManager" selected="Application.Clients">
     <configuration name="Clients" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.client.Clients" />
       <module name="ChatApp" />
@@ -87,13 +87,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.org.example.client.Clients" />
+      <item itemvalue="Application.Clients" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Server" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.org.example.client.Clients" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.Main" />
       </list>
@@ -136,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655279818303</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Committing with some modifications">
+      <created>1655292313364</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655292313364</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
