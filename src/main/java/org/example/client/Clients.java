@@ -39,20 +39,17 @@ public class Clients {
         }
     }
 
-    public void awaitingMessage() {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                String userMessages;
-                    while (socket.isConnected()) {
-                        try {
-                            userMessages = bufferedReader.readLine();
-                            System.out.println(userMessages);
-                        } catch (IOException e) {
-                            exitAll(socket, bufferedReader, bufferedWriter);
-                        }
+    public void receivingMessage() {
+        new Thread(() -> {
+            String userMessages;
+                while (socket.isConnected()) {
+                    try {
+                        userMessages = bufferedReader.readLine();
+                        System.out.println(userMessages);
+                    } catch (IOException e) {
+                        exitAll(socket, bufferedReader, bufferedWriter);
                     }
-            }
+                }
         }).start();
     }
 
@@ -80,7 +77,7 @@ public class Clients {
         String clientUserName = scanner.nextLine();
         Socket socket = new Socket("localhost", 1234);
         Clients clients = new Clients(socket, clientUserName);
-        clients.awaitingMessage();
+        clients.receivingMessage();
         clients.sendMessage();
     }
 }
